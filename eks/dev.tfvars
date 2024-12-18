@@ -17,10 +17,6 @@ eip-name              = "elasticip-ngw"
 ngw-name              = "ngw"
 eks-sg                = "eks-sg"
 
-#backend
-bucket        = "MERN-APP-bkt-001"
-key           = "eks/terraform.tfstate"
-
 
 # EKS
 is-eks-cluster-enabled     = true

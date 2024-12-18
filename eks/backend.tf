@@ -7,14 +7,14 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = var.bucket
-    region         = var.aws-region
-    key            = var.key
+    bucket         = "MERN-APP-bkt-001"
+    region         = "us-east-1"
+    key            = "eks/terraform.tfstate"
     #dynamodb_table = "Lock-Files"
     encrypt        = true
   }
 }
 
 provider "aws" {
-  region  = var.aws-region
+  region  = "us-east-1"
 }

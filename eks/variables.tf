@@ -26,10 +26,6 @@ variable "eip-name" {}
 variable "ngw-name" {}
 variable "eks-sg" {}
 
-#backend
-variable "bucket" {}
-variable "key" {}
-
 # EKS
 variable "is-eks-cluster-enabled" {}
 variable "cluster-version" {}
