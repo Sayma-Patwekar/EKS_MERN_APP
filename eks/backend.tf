@@ -7,7 +7,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "MERN-APP-bkt-001"
+    bucket         = "mern-app-bkt-001"
     region         = "us-east-1"
     key            = "eks/terraform.tfstate"
     #dynamodb_table = "Lock-Files"
