@@ -12,6 +12,11 @@ properties([
 pipeline {
     agent any
     stages {
+        stage('Cleanup') {
+            steps {
+                cleanWs()
+            }
+        }
         stage('Preparing') {
             steps {
                 sh 'echo Preparing'
