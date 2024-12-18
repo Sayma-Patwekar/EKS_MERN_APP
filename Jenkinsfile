@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Git Pulling') {
             steps {
-                git branch: 'master', url: 'https://github.com/Sayma-Patwekar/EKS_MERN_APP.git'
+                git branch: 'main', url: 'https://github.com/Sayma-Patwekar/EKS_MERN_APP.git'
             }
         }
         stage('Init') {
